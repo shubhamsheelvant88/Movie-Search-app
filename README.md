@@ -1,1 +1,1 @@
-This is s movie search app using OMDb API
+This is movie search app using OMDb API

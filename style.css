@@ -41,9 +41,10 @@ h1 img {
 
 .search-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 30px 0;
   gap: 10px;
+
 }
 
 .search-box input {
@@ -59,7 +60,6 @@ h1 img {
   border: none;
   cursor: pointer;
 }
-
 body {
   background-color: black;
   font-family: Arial, sans-serif;
@@ -75,12 +75,7 @@ button {
   cursor: pointer;
 }
 
-.allCards{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
+
 
 .card {
   background-color: #111;
@@ -98,8 +93,11 @@ button {
   height: 300px;
   object-fit: cover; /* keeps uniform size */
 }
-
+.card-title {
+  font-size: 12px;
+}
 .card-body {
+  background-color: black;
   padding: 10px;
   color: white;
   text-align: center;
@@ -123,4 +121,11 @@ body {
 .allCards {
     display : flex;
     flex-wrap: wrap;
+}
+
+.allCards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }

@@ -1,0 +1,25 @@
+{
+  "name": "movie-search-app",
+  "version": "1.0.0",
+  "description": "This is movie search app using OMDb API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhamsheelvant88/movie-search-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shubhamsheelvant88/movie-search-app/issues"
+  },
+  "homepage": "https://github.com/shubhamsheelvant88/movie-search-app#readme",
+  "dependencies": {
+    "ejs": "^5.0.2",
+    "express": "^5.2.1"
+  }
+}

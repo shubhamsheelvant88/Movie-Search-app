@@ -1,35 +1,5 @@
-/* .card img{
-    height : 250px;
-    width : 200px;
-    padding-left : 5px;
-    padding-top : 5px;
-    border-radius: 10px;
-
-} */
-
-/*  .card {
-    /* height : 250px;
-    width : 200px; 
-    margin: 10px;
-}
-
-.btn {
-    width: 100%;
-} */
-
-/* .card {
-  width: 200px;
-  border: 2px solid black;
-  /*box-sizing: border-box;
-  border-radius: 5px;
-  box-shadow: 2px 2px 7px black;
-  transition: 1s;
-  margin: 10px;
-  margin: 0 auto;
-  margin-top: 50px;
-} */
 h1 {
-    color : white ;
+  color : white ;
 }
 
 h1 img {
@@ -41,9 +11,9 @@ h1 img {
 
 .search-box {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-evenly; */
   margin: 30px 0;
-  gap: 10px;
+  /* gap : 10px; */
 
 }
 
@@ -52,6 +22,7 @@ h1 img {
   padding: 12px 20px;
   border-radius: 25px;
   border: none;
+  margin : 5px;
 }
 
 .search-box button {
@@ -60,12 +31,8 @@ h1 img {
   border: none;
   cursor: pointer;
 }
-body {
-  background-color: black;
-  font-family: Arial, sans-serif;
-}
 
-input {
+/* input {
   padding: 10px;
   width: 250px;
 }
@@ -73,59 +40,50 @@ input {
 button {
   padding: 10px 15px;
   cursor: pointer;
-}
-
-
-
-.card {
-  background-color: #111;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover; /* keeps uniform size */
-}
-.card-title {
-  font-size: 12px;
-}
-.card-body {
-  background-color: black;
-  padding: 10px;
-  color: white;
-  text-align: center;
-}
-
-/* .card-body {
-    padding : 0 0 2px 2px;
-}
-.card-img {
-    width : 100%;
-    border : 5px 5px 0 0 ;
-}
-
-.card:hover {
-    box-shadow : 4px 4px 14px white;
 } */
-body {
-    background-color: black;
-} 
 
-.allCards {
-    display : flex;
-    flex-wrap: wrap;
+#movies {
+  display : flex;
+  flex-wrap: wrap;
+
 }
 
-.allCards{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
+#movies div {
+  display: flex;
+  flex-direction: column;
+  margin : 30px;
+  
+  padding : 6px;
+  border-radius : 10px;
 }
+
+#movies div:hover {
+  transition: 0.2s ease;
+  transform : scale(1.1);
+}
+
+#movies div img {
+  height : 300px;
+  width : 100%;
+  border-radius : 10px;
+}
+
+
+#suggestions {
+  position : absolute;
+  max-height : 200px;
+  width : 100%;
+  top : 100%;
+  left : 0;
+  border : 1px solid blueviolet;
+  display : none;
+}
+
+/* #suggestions div{
+  padding : 10px;
+  cursor : pointer;
+}
+
+#suggestions div:hover {
+
+} */

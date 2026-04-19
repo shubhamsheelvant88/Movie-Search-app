@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+</head>
+<body>
+    <form method="POST" action="/search">
+        <input type="text" name="movie" placeholder="Search movie" required>
+        <button>Search</button>
+    </form>
+
+    <% if (movies && movies.length > 0) { %>
+        <% movies.forEach(movie => { %>
+            <div class="movies">
+                <img src="<%= movie.Poster %>" alt="<%= movie.Title %>">
+                <h3><%= movie.Title %></h3>
+                <p><%= movie.Year %></p>
+                <a href="/search/<%= movie.imdbID %>">View</a>
+            </div>
+        <% }) %>
+    <% } %>
+</body>
+</html>

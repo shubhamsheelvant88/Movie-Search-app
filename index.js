@@ -47,4 +47,8 @@ app.get("/search/:id" , async (req , res) => {
     res.render("view" , { movie : data });
 });
 
+app.use((req, res) => {
+    res.status(404).send(`Cannot GET ${req.path}`);
+});
+
 

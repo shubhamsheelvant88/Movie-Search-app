@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View page</title>
 </head>
+<link rel="stylesheet" href="/style.css">
 <body>
+    <h1>Your movies</h1>
     <div class="movies">
         <img src="<%= movie.Poster %>" alt="<%= movie.Title %>">
         <h3><%= movie.Title %></h3>
         <p><%= movie.Year %></p>
+        <a href="/search/">Go back</a>
     </div>
 </body>
 </html>
